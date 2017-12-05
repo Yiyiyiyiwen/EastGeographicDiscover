@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.even1.meat">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <android:uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="595da541ad8b656fe4ff261377122777" />
+
+        <service android:name="com.amap.api.location.APSService" />
+
+        <activity android:name=".MainActivity" />
+        <activity android:name=".fragment.Column" />
+        <activity android:name=".fragment.Discover" />
+        <activity android:name=".fragment.Home" />
+        <activity android:name=".details.FriendDetail" />
+        <activity android:name=".Columns.ComeAcross" />
+        <activity android:name=".details.Friendlist" />
+        <activity android:name=".MainActivity2" />
+        <activity android:name=".Welcome.Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Columns.RunRoute" />
+        <activity android:name=".Columns.Trends" />
+        <activity android:name=".Run.Run" />
+        <activity android:name=".details.InformationDetail" />
+        <activity android:name=".Run.RunResult" />
+        <activity android:name=".Run.Runlist"></activity>
+    </application>
+
+</manifest>
